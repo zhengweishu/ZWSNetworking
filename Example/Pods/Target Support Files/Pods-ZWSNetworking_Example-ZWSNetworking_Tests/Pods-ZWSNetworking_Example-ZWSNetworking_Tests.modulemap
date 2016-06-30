@@ -1,0 +1,6 @@
+framework module Pods_ZWSNetworking_Example_ZWSNetworking_Tests {
+  umbrella header "Pods-ZWSNetworking_Example-ZWSNetworking_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

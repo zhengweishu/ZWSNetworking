@@ -1,0 +1,6 @@
+framework module ZWSNetworking {
+  umbrella header "ZWSNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

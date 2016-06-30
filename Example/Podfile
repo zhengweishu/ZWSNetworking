@@ -2,11 +2,12 @@ use_frameworks!
 
 target 'ZWSNetworking_Example' do
   pod 'ZWSNetworking', :path => '../'
+  pod 'Masonry', '~> 1.0.1'
 
-  target 'ZWSNetworking_Tests' do
-    inherit! :search_paths
+target 'ZWSNetworking_Tests' do
+  pod 'ZWSNetworking', :path => '../'
 
-    pod 'Specta'
+  pod 'Specta'
   pod 'Expecta'
   pod 'FBSnapshotTestCase'
   pod 'Expecta+Snapshots'
