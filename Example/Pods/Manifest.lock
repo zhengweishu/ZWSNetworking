@@ -26,7 +26,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - Masonry (1.0.1)
   - Specta (1.0.5)
-  - ZWSNetworking (1.0.0):
+  - ZWSNetworking (1.0.1):
     - AFNetworking (~> 3.1.0)
 
 DEPENDENCIES:
@@ -48,6 +48,6 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 432afd8d059ccef7f207225894840a03fbcf7474
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
-  ZWSNetworking: 48f165ea25f3e38cad72f51f49d1ac117986e569
+  ZWSNetworking: 699da74ca86dcd4e2833ee0d1208f490531a372d
 
 COCOAPODS: 0.39.0

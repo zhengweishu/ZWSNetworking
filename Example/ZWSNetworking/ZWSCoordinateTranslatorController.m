@@ -9,6 +9,7 @@
 #import "ZWSCoordinateTranslatorController.h"
 #import "ZWSTranslatorAPIManager.h"
 #import "Masonry.h"
+#import "ZWSNetworking.h"
 
 @interface ZWSCoordinateTranslatorController () <ZWSAPIManagerParamSource, ZWSAPIManagerCallbackDelegate>
 
@@ -84,8 +85,8 @@
     
     if (manager == self.translatorAPIManager) {
         params = @{
-                   kTranslatorAPIManagerParamsKeyLatitude  : @(31.228000),
-                   kTranslatorAPIManagerParamsKeyLongitude : @(121.454290)
+                   kTranslatorAPIManagerParamsKeyLatitude  : @([ZWSAppContext sharedInstance].latitude),
+                   kTranslatorAPIManagerParamsKeyLongitude : @([ZWSAppContext sharedInstance].longitude)
                    };
     }
     

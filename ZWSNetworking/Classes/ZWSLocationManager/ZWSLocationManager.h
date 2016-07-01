@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger, ZWSLocationManagerLocationResult) {
 @interface ZWSLocationManager : NSObject
 
 @property (nonatomic, assign, readonly) ZWSLocationManagerLocationResult locationResult;
-@property (nonatomic, assign,readonly) ZWSLocationManagerLocationServiceStatus locationStatus;
+@property (nonatomic, assign, readonly) ZWSLocationManagerLocationServiceStatus locationStatus;
 @property (nonatomic, copy, readonly) CLLocation *currentLocation;
 
 + (instancetype)sharedInstance;

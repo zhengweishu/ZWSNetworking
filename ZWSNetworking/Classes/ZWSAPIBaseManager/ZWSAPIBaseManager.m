@@ -291,7 +291,7 @@ NSString * const kBSUserTokenNotificationUserInfoKeyManagerToContinue = @"kBSUse
     }
 }
 
-//只有返回YES才会继续调用API
+// 只有返回YES才会继续调用API
 - (BOOL)shouldCallAPIWithParams:(NSDictionary *)params
 {
     if (self != self.interceptor && [self.interceptor respondsToSelector:@selector(shouldCallAPIWithParams:)]) {

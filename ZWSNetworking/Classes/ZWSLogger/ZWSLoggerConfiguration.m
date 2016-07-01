@@ -14,7 +14,7 @@
 - (void)configWithAppType:(ZWSAppType)appType
 {
     switch (appType) {
-        case ZWSAppTypexxx:
+        case ZWSAppTypeAppstore:
             self.appKey = @"xxxxxx";
             self.serviceType = @"xxxxx";
             self.sendLogMethod = @"xxxx";

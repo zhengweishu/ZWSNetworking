@@ -134,7 +134,12 @@
     [actionDict addEntriesFromDictionary:params];
     [actionDict addEntriesFromDictionary:[ZWSCommonParamsGenerator commonParamsDictionaryForLog]];
     NSDictionary *logJsonDict = @{self.configParams.sendActionKey:[@[actionDict] zws_jsonString]};
-    [[ZWSAPIProxy sharedInstance] callPOSTWithParams:logJsonDict serviceIdentifier:self.configParams.serviceType methodName:self.configParams.sendActionMethod success:nil fail:nil];
+    
+    [[ZWSAPIProxy sharedInstance] callPOSTWithParams:logJsonDict
+                                   serviceIdentifier:self.configParams.serviceType
+                                          methodName:self.configParams.sendActionMethod
+                                             success:nil
+                                                fail:nil];
 }
 
 @end

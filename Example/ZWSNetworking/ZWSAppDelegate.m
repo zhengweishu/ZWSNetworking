@@ -7,12 +7,14 @@
 //
 
 #import "ZWSAppDelegate.h"
+#import "ZWSNetworking.h"
 
 @implementation ZWSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+    [[ZWSAppContext sharedInstance] appStarted];
     return YES;
 }
 

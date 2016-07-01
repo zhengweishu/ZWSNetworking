@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+项目是重新实现了一遍原安居客架构师田伟宇的网络请求库，为的是熟悉和理解整个库的框架。
+作者的博客网站：http://casatwy.com/，里面包含一个系列博文iOS架构谈，现在正在逐步将其思想融入自己的项目中。
+
 ## Installation
 
 ZWSNetworking is available through [CocoaPods](http://cocoapods.org). To install

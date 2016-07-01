@@ -24,6 +24,7 @@
 		930CDF3E1D24C6DD00DED0E4 /* ZWSCoordinateTranslatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CDF3D1D24C6DD00DED0E4 /* ZWSCoordinateTranslatorController.m */; };
 		930CDF421D24C75600DED0E4 /* ZWSTranslatorAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CDF411D24C75600DED0E4 /* ZWSTranslatorAPIManager.m */; };
 		930CDF451D24D04B00DED0E4 /* ZWSCaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CDF441D24D04B00DED0E4 /* ZWSCaseFactory.m */; };
+		930CDF4E1D265D9F00DED0E4 /* ZWSArticlesAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CDF4D1D265D9F00DED0E4 /* ZWSArticlesAPIManager.m */; };
 		CDE264A0E350CD0D14B05199 /* Pods_ZWSNetworking_Example_ZWSNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F30655BA6FED98FF3675213 /* Pods_ZWSNetworking_Example_ZWSNetworking_Tests.framework */; };
 		F1B5EF8E87B04C0A1BD8A753 /* Pods_ZWSNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2C6508D83713792F75D8E8 /* Pods_ZWSNetworking_Example.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,8 @@
 		930CDF411D24C75600DED0E4 /* ZWSTranslatorAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSTranslatorAPIManager.m; sourceTree = "<group>"; };
 		930CDF431D24D04B00DED0E4 /* ZWSCaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSCaseFactory.h; sourceTree = "<group>"; };
 		930CDF441D24D04B00DED0E4 /* ZWSCaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSCaseFactory.m; sourceTree = "<group>"; };
+		930CDF4C1D265D9F00DED0E4 /* ZWSArticlesAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSArticlesAPIManager.h; sourceTree = "<group>"; };
+		930CDF4D1D265D9F00DED0E4 /* ZWSArticlesAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSArticlesAPIManager.m; sourceTree = "<group>"; };
 		9341992C1D228EC900E075CD /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
 		BC373ED7E52026697328BBB6 /* Pods-ZWSNetworking_Example-ZWSNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWSNetworking_Example-ZWSNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWSNetworking_Example-ZWSNetworking_Tests/Pods-ZWSNetworking_Example-ZWSNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DDB6EEFF8BDC9630C2CE19B8 /* Pods-ZWSNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWSNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWSNetworking_Example/Pods-ZWSNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +143,12 @@
 		6003F593195388D20070C39A /* Example for ZWSNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				930CDF331D23F1B400DED0E4 /* ZWSCoordinateTranslator */,
+				9341992C1D228EC900E075CD /* CommonHeader.h */,
+				930CDF431D24D04B00DED0E4 /* ZWSCaseFactory.h */,
+				930CDF441D24D04B00DED0E4 /* ZWSCaseFactory.m */,
+				930CDF381D24C44600DED0E4 /* Cases */,
+				6003F59C195388D20070C39A /* ZWSAppDelegate.h */,
+				6003F59D195388D20070C39A /* ZWSAppDelegate.m */,
 				6003F5A5195388D20070C39A /* ZWSViewController.h */,
 				6003F5A6195388D20070C39A /* ZWSViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -152,8 +160,6 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* ZWSAppDelegate.h */,
-				6003F59D195388D20070C39A /* ZWSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F595195388D20070C39A /* ZWSNetworking-Info.plist */,
@@ -193,20 +199,10 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		930CDF331D23F1B400DED0E4 /* ZWSCoordinateTranslator */ = {
-			isa = PBXGroup;
-			children = (
-				9341992C1D228EC900E075CD /* CommonHeader.h */,
-				930CDF431D24D04B00DED0E4 /* ZWSCaseFactory.h */,
-				930CDF441D24D04B00DED0E4 /* ZWSCaseFactory.m */,
-				930CDF381D24C44600DED0E4 /* Cases */,
-			);
-			name = ZWSCoordinateTranslator;
-			sourceTree = "<group>";
-		};
 		930CDF381D24C44600DED0E4 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				930CDF4B1D265D3A00DED0E4 /* NextPage */,
 				930CDF3F1D24C70700DED0E4 /* CoordinateTranslator */,
 			);
 			name = Cases;
@@ -221,6 +217,15 @@
 				930CDF3D1D24C6DD00DED0E4 /* ZWSCoordinateTranslatorController.m */,
 			);
 			name = CoordinateTranslator;
+			sourceTree = "<group>";
+		};
+		930CDF4B1D265D3A00DED0E4 /* NextPage */ = {
+			isa = PBXGroup;
+			children = (
+				930CDF4C1D265D9F00DED0E4 /* ZWSArticlesAPIManager.h */,
+				930CDF4D1D265D9F00DED0E4 /* ZWSArticlesAPIManager.m */,
+			);
+			name = NextPage;
 			sourceTree = "<group>";
 		};
 		BF0A416BEBA0FDA86518D8B2 /* Pods */ = {
@@ -433,6 +438,7 @@
 			files = (
 				930CDF421D24C75600DED0E4 /* ZWSTranslatorAPIManager.m in Sources */,
 				930CDF451D24D04B00DED0E4 /* ZWSCaseFactory.m in Sources */,
+				930CDF4E1D265D9F00DED0E4 /* ZWSArticlesAPIManager.m in Sources */,
 				6003F59E195388D20070C39A /* ZWSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZWSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
